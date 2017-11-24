@@ -7,11 +7,11 @@ var social=require("./All Project API/passport/passport")(app,passport);
 var bodyParser=require("body-parser");
 var routes=require("./All Project API/approval_api/routes/api.js");
 var state_routes=require("./All Project API/states_Api/routes/state_Api.js");
-var partner_college=require("./All Project API/partner-colleges-universities/routes/partner_college_Api.js");
+
 
 var applycolg=require("./All Project API/applycolg_api/routes/apply_api.js");
 var acdemicdetails=require("./All Project API/Personal_api/routes/personal_api.js");
-var collegedetails=require("./All Project API/colllege_detail.js/routes/college_details_api.js");
+
 var personaldetails=require("./All Project API/Academic_api/route/academic_api.js");
 var course=require("./All Project API/courses_Api/routes/course_api.js");
 var exam=require("./All Project API/exam_api/routes/exam_api.js");
@@ -33,11 +33,11 @@ app.use(express.static(__dirname+'/Admission Portal'));
 app.use(bodyParser.json());
 app.use("/api",require("./All Project API/approval_api/routes/api.js"));
 app.use("/api",require("./All Project API/states_Api/routes/state_Api.js"));
-app.use("/api",require("./All Project API/partner-colleges-universities/routes/partner_college_Api.js"));
+
   
 app.use("/api",require("./All Project API/applycolg_api/routes/apply_api.js"));
 app.use("/api",require("./All Project API/Personal_api/routes/personal_api.js"));
-app.use("/api",require("./All Project API/colllege_detail.js/routes/college_details_api.js"));
+
 app.use("/api",require("./All Project API/Academic_api/route/academic_api.js"));
 app.use("/api",require("./All Project API/courses_Api/routes/course_api.js"));
 app.use("/api",require("./All Project API/exam_api/routes/exam_api.js"));
